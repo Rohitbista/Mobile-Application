@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#A761EC"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Enter temperature"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:background="@drawable/mybutton"
+        android:id="@+id/getVal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="0.0"
+        android:textColor="@color/black"
+        android:background="@drawable/mybutton"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:id="@+id/showAns"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/c2f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#34A1A1"
+            android:textColor="@color/white"
+            android:text="Celsius to Fahrenheit" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit to Celsius"
+            android:background="#34A1A1"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/f2c"/>
+    </RadioGroup>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/ansBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Answer"
+            android:textColor="@color/black"
+            android:backgroundTint="#47EC4B"
+            android:layout_gravity="right"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Again"
+            android:id="@+id/againBtn"
+            android:layout_gravity="right"
+            android:textColor="@color/black"
+            android:backgroundTint="#47EC4B"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
